@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.jetbrainsKotlinKapt)
+    alias(libs.plugins.daggerHiltAndroid)
 }
 
 android {
@@ -72,4 +74,10 @@ dependencies {
 
     // ConstraintLayout
     implementation(libs.constraintlayout.compose)
+
+    // Kapt
+    kapt(libs.hilt.android.compiler)
+
+    // Hilt
+    implementation(libs.hilt.android)
 }
