@@ -69,4 +69,7 @@ dependencies {
 
     // Coroutines
     implementation(libs.kotlinx.coroutines.android)
+
+    // ConstraintLayout
+    implementation(libs.constraintlayout.compose)
 }
